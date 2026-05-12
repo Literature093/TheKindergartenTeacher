@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Kindergarten Teacher | Literary Analysis</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+    font-family:'Poppins', sans-serif;
+    margin:0;
+    background:linear-gradient(135deg,#e8fff8,#fff9e6);
+    color:#333;
+}
+
+header{
+    text-align:center;
+    padding:40px 20px;
+    background:linear-gradient(135deg,#6ee7b7,#fcd34d);
+    color:#064e3b;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    background:white;
+    padding:15px;
+}
+
+nav button{
+    border:none;
+    padding:10px 18px;
+    border-radius:20px;
+    background:#ccfbf1;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav button:hover{
+    background:#99f6e4;
+    transform:scale(1.05);
+}
+
+.container{
+    max-width:1100px;
+    margin:30px auto;
+    padding:0 20px;
+}
+
+.section{display:none;}
+.section.active{display:block; animation:fadeIn 0.8s ease;}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);} 
+    to{opacity:1; transform:translateY(0);} 
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.highlight{
+    background:#ecfeff;
+    padding:15px;
+    border-left:5px solid #2dd4bf;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.quote{
+    font-style:italic;
+    text-align:center;
+    margin:20px 0;
+    color:#065f46;
+}
+
+/* CREATIVE SECTION */
+.creative-text{
+    font-family:'Quicksand', sans-serif;
+    line-height:1.8;
+    position:relative;
+    overflow:hidden;
+}
+
+.creative-text h2{
+    font-family:'Pacifico', cursive;
+    font-size:32px;
+    text-align:center;
+    color:#059669;
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{transform:translateY(0);} 
+    50%{transform:translateY(-5px);} 
+    100%{transform:translateY(0);} 
+}
+
+.creative-text p{
+    opacity:0;
+    animation:fadeStory 1s forwards;
+}
+
+.creative-text p:nth-child(2){animation-delay:0.3s}
+.creative-text p:nth-child(3){animation-delay:0.6s}
+.creative-text p:nth-child(4){animation-delay:0.9s}
+.creative-text p:nth-child(5){animation-delay:1.2s}
+.creative-text p:nth-child(6){animation-delay:1.5s}
+.creative-text p:nth-child(7){animation-delay:1.8s}
+.creative-text p:nth-child(8){animation-delay:2.1s}
+
+@keyframes fadeStory{
+    from{opacity:0; transform:translateY(15px);} 
+    to{opacity:1; transform:translateY(0);} 
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(135deg,#6ee7b7,#fcd34d);
+    color:#064e3b;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>The Kindergarten Teacher</h1>
+<p>A Literary Exploration of Education, Dreams, and Society</p>
+</header>
+
+<nav>
+<button onclick="showSection('author')">Author</button>
+<button onclick="showSection('overview')">Overview</button>
+<button onclick="showSection('themes')">Themes</button>
+<button onclick="showSection('analysis')">Analysis</button>
+<button onclick="showSection('impact')">Impact</button>
+<button onclick="showSection('story')">Story</button>
+</nav>
+
+<div class="container">
+
+<!-- AUTHOR -->
+<div id="author" class="section active">
+<div class="card">
+<h2>Introduction to Aung Thinn</h2>
+<p>
+Aung Thinn, a respected literary figure from Myanmar, is widely recognized for his insightful explorations of education and social issues. His works are deeply rooted in personal experiences and the historical realities of his country, allowing readers to engage with narratives that are both authentic and thought-provoking.
+</p>
+
+<h3>Significance in Myanmar Literature</h3>
+<p>
+Aung Thinn has made significant contributions to contemporary Myanmar literature, particularly in the field of educational storytelling. His works highlight the importance of teaching and learning as transformative forces within society.
+</p>
+
+<div class="quote">"Education is not just learning—it is transformation."</div>
+</div>
+</div>
+
+<!-- OVERVIEW -->
+<div id="overview" class="section">
+<div class="card">
+<h2>Main Characters</h2>
+<p>
+The story centers on a compassionate and dedicated kindergarten teacher who symbolizes hope and resilience. Supporting characters include her students and their families, reflecting diverse social and economic backgrounds.
+</p>
+</div>
+
+<div class="card">
+<h2>Plot Summary</h2>
+<p>
+The story follows a devoted educator whose passion for nurturing young minds leads her to confront societal and institutional challenges while supporting her students' growth.
+</p>
+
+<div class="highlight">Education shapes identity and opportunity.</div>
+</div>
+
+<div class="card">
+<h2>Setting and Context</h2>
+<p>
+Set in contemporary Myanmar, the narrative reflects the cultural importance of education amid social and economic challenges.
+</p>
+</div>
+</div>
+
+<!-- THEMES -->
+<div id="themes" class="section">
+<div class="card">
+<h2>Themes Explored</h2>
+<div class="grid">
+<div class="card">
+<h3>Education</h3>
+<p>Education shapes identity and opportunities.</p>
+</div>
+<div class="card">
+<h3>Dreams</h3>
+<p>Dreams motivate growth and perseverance.</p>
+</div>
+<div class="card">
+<h3>Parenting</h3>
+<p>Family plays a vital role in development.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ANALYSIS -->
+<div id="analysis" class="section">
+<div class="card">
+<h2>Character Analysis</h2>
+<p>
+The protagonist embodies both the ideals and challenges of teaching. Supporting characters provide diverse perspectives on education.
+</p>
+
+<p>
+Relationships highlight emotional investment, showing both joys and struggles in teaching.
+</p>
+</div>
+</div>
+
+<!-- IMPACT -->
+<div id="impact" class="section">
+<div class="card">
+<h2>Impact and Reception</h2>
+<p>
+The work received critical acclaim for its realistic portrayal of education and childhood experiences in Myanmar.
+</p>
+
+<h3>Final Message</h3>
+<p>
+The story emphasizes the transformative power of education and reminds us that small acts of teaching can create lasting impact.
+</p>
+
+<div class="quote">"A small act of teaching can change a lifetime."</div>
+</div>
+</div>
+
+<!-- CREATIVE STORY -->
+<div class="story-section">
+  <div class="story-container">
+    <h1>The Kindergarten Teacher</h1>
+    
+    <!-- Part 1 -->
+    <article class="story-part">
+      <div class="part-header">
+        <h2>Part 1</h2>
+      </div>
+      <p>I was a lecturer at the University of Yangon since the early 1960s. Before that, I served about three years as a middle school teacher in my hometown of Taungdwin-gyi. At the risk of being thought boastful, I must say that I was considered quite a good teacher at both posts.
+        Actually, I had thought it was nothing much: one becomes known as a "good teacher" without too much effort or talent. However, what I encountered on my trip home in 1963 shook me.
+        I arrived just as the schools reopened for the new semester, and I realized I had been way off the mark with my evaluation of "good teaching."</p>
+      
+      <div class="audio-player-wrapper">
+        <div class="audio-player">
+          <button class="play-button" aria-label="Play Part 1 recording">
+            <span class="button-icon">🎙️</span>
+          </button>
+          <audio id="audio-part-1" preload="none">
+            <source src="https://drive.google.com/uc?export=download&id=1tedqJYzbDmNtqcts8w2tfqhgQaa2XY9e" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <span class="audio-label">Listen to Part 1</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Part 2 -->
+    <article class="story-part">
+      <div class="part-header">
+        <h2>Part 2</h2>
+      </div>
+      <p>Let me explain. On that visit to Taungdwin-gyi, I liked to spend my time at the Shwe In Taung Pagoda, where a little museum had been set up. I was one of the directors of the museum along with some of my best friends, so we liked to meet there in the evenings.
+        On my way to the museum, I would drop in at the primary school next to the pagoda to inform my friend, U Nyan Sein, that I'd be waiting for him. He taught kindergarten.</p>
+      
+      <div class="audio-player-wrapper">
+        <div class="audio-player">
+          <button class="play-button" aria-label="Play Part 2 recording">
+            <span class="button-icon">🎙️</span>
+          </button>
+          <audio id="audio-part-2" preload="none">
+            <source src="https://drive.google.com/uc?export=download&id=12dFQ1aPKfZp1tL5KAdTKdXtIicqBfAoV" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <span class="audio-label">Listen to Part 2</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Part 3 -->
+    <article class="story-part">
+      <div class="part-header">
+        <h2>Part 3</h2>
+      </div>
+      <p>One day I stood at the door of his class while he was drawing on the blackboard. His class of five-year-olds waited silently.
+        After a few strokes, they recognized the drawing.
+        "It's Master Tortoise!" they cried.
+        He added details.
+        "He's holding a walking stick!"
+        "He's smoking a pipe!"
+        Then he began telling a story as he drew.</p>
+      
+      <div class="audio-player-wrapper">
+        <div class="audio-player">
+          <button class="play-button" aria-label="Play Part 3 recording">
+            <span class="button-icon">🎙️</span>
+          </button>
+          <audio id="audio-part-3" preload="none">
+            <source src="https://drive.google.com/uc?export=download&id=1Zy03I5KKYTngdKa5wxSDd7sgUOVZ9Mw-" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <span class="audio-label">Listen to Part 3</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Part 4 -->
+    <article class="story-part">
+      <div class="part-header">
+        <h2>Part 4</h2>
+      </div>
+      <p>For several days, I saw him doing the same thing—drawing and storytelling.
+        So I asked him why he wasn't teaching lessons.
+        "I can teach reading and writing anytime," he said. "Right now, it's important that children enjoy school. They must love coming to school, not fear it."
+        His answer made me think.</p>
+      
+      <div class="audio-player-wrapper">
+        <div class="audio-player">
+          <button class="play-button" aria-label="Play Part 4 recording">
+            <span class="button-icon">🎙️</span>
+          </button>
+          <audio id="audio-part-4" preload="none">
+            <source src="https://drive.google.com/uc?export=download&id=1Sbi3lX3qszLsMij4erFjInPlTP5D31My" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <span class="audio-label">Listen to Part 4</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Part 5 -->
+    <article class="story-part">
+      <div class="part-header">
+        <h2>Part 5</h2>
+      </div>
+      <p>One day, a young boy sat crying in the front row. He ignored everything and kept looking out the window at an elderly woman sitting under a tamarind tree.
+        U Nyan Sein called out to her to move away so the boy would stop crying. When she did, the boy cried even louder.
+        "This is awful," he told me.</p>
+      
+      <div class="audio-player-wrapper">
+        <div class="audio-player">
+          <button class="play-button" aria-label="Play Part 5 recording">
+            <span class="button-icon">🎙️</span>
+          </button>
+          <audio id="audio-part-5" preload="none">
+            <source src="https://drive.google.com/uc?export=download&id=13Nmct_0ZsbcdAJsuqJ11WmgFZxCJJ9Ej" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <span class="audio-label">Listen to Part 5</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Part 6 -->
+    <article class="story-part">
+      <div class="part-header">
+        <h2>Part 6</h2>
+      </div>
+      <p>Then he smiled and said to the class,
+        "It seems this boy has too much crying left. Why don't you all help him use it up?"
+        The children began pretending to cry loudly.
+        The boy stopped in surprise. Soon, everyone stopped crying—and the boy calmed down.</p>
+      
+      <div class="audio-player-wrapper">
+        <div class="audio-player">
+          <button class="play-button" aria-label="Play Part 6 recording">
+            <span class="button-icon">🎙️</span>
+          </button>
+          <audio id="audio-part-6" preload="none">
+            <source src="https://drive.google.com/uc?export=download&id=16KTmWrk3uumKaAzmUw4Bpp4TSbPmOLFQ" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <span class="audio-label">Listen to Part 6</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Part 7 -->
+    <article class="story-part">
+      <div class="part-header">
+        <h2>Part 7</h2>
+      </div>
+      <p>The next day, he announced,
+        "I'm going to give you some plums!"
+        The children got excited.
+        He drew plums on the board and pretended to throw them. The children pretended to eat them—some sweet, some sour, some rotten—laughing the whole time.</p>
+      
+      <div class="audio-player-wrapper">
+        <div class="audio-player">
+          <button class="play-button" aria-label="Play Part 7 recording">
+            <span class="button-icon">🎙️</span>
+          </button>
+          <audio id="audio-part-7" preload="none">
+            <source src="https://drive.google.com/uc?export=download&id=1NFn2t_3WTlcSl6nzDiNCp-fgiWtqwkrS" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <span class="audio-label">Listen to Part 7</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Part 8 -->
+    <article class="story-part">
+      <div class="part-header">
+        <h2>Part 8</h2>
+      </div>
+      <p>The following day, he said he would "buy" plums from them.
+        He showed them how to draw a "sweet plum" (a proper circle) and a "rotten plum" (drawn the wrong way).
+        The children copied the movements and even corrected each other.</p>
+      
+      <div class="audio-player-wrapper">
+        <div class="audio-player">
+          <button class="play-button" aria-label="Play Part 8 recording">
+            <span class="button-icon">🎙️</span>
+          </button>
+          <audio id="audio-part-8" preload="none">
+            <source src="https://drive.google.com/uc?export=download&id=1K84vp79UYg5S8jukKy62FULoF_CEyLas" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <span class="audio-label">Listen to Part 8</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Part 9 -->
+    <article class="story-part">
+      <div class="part-header">
+        <h2>Part 9</h2>
+      </div>
+      <p>The children drew plums on their slates and showed them to him.
+        He praised good ones and gently corrected bad ones.
+        Even the boy who used to cry became eager and happy, proudly showing his work again and again.</p>
+      
+      <div class="audio-player-wrapper">
+        <div class="audio-player">
+          <button class="play-button" aria-label="Play Part 9 recording">
+            <span class="button-icon">🎙️</span>
+          </button>
+          <audio id="audio-part-9" preload="none">
+            <source src="https://drive.google.com/uc?export=download&id=1LMifUeHc-VVLCLynARTKio4wIlmYclbl" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <span class="audio-label">Listen to Part 9</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Part 10 -->
+    <article class="story-part">
+      <div class="part-header">
+        <h2>Part 10</h2>
+      </div>
+      <p>The next lesson introduced letters. He compared each letter to having a name, just like the children.
+        The class continued learning joyfully.
+        Watching all this, I was deeply shaken.
+        Was I really a good teacher?
+        Was I doing as much for my students as he was?</p>
+      
+      <div class="audio-player-wrapper">
+        <div class="audio-player">
+          <button class="play-button" aria-label="Play Part 10 recording">
+            <span class="button-icon">🎙️</span>
+          </button>
+          <audio id="audio-part-10" preload="none">
+            <source src="https://drive.google.com/uc?export=download&id=1dhNjwD9N8eQ2_3hbDHIy8rG5_-xAIzPA" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <span class="audio-label">Listen to Part 10</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+
+<style>
+  /* Story Section Styles */
+  .story-section {
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  }
+
+  .story-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .story-container > h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    letter-spacing: -0.5px;
+  }
+
+  /* Story Part Styles */
+  .story-part {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-left: 5px solid #3498db;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .story-part:hover {
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.15);
+    transform: translateX(5px);
+  }
+
+  .part-header {
+    margin-bottom: 1rem;
+  }
+
+  .part-header h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .story-part p {
+    color: #34495e;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin: 0 0 1.5rem 0;
+    text-align: justify;
+  }
+
+  .story-part p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  /* Audio Player Wrapper with Rainbow Border */
+  .audio-player-wrapper {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    border: 3px solid transparent;
+    background-image: 
+      linear-gradient(white, white),
+      linear-gradient(90deg, 
+        #ff0000,  /* Red */
+        #ff7f00,  /* Orange */
+        #ffff00,  /* Yellow */
+        #00ff00,  /* Green */
+        #0000ff,  /* Blue */
+        #4b0082,  /* Indigo */
+        #9400d3   /* Violet */
+      );
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Audio Player */
+  .audio-player {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .play-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    flex-shrink: 0;
+  }
+
+  .play-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+  }
+
+  .play-button:active {
+    transform: scale(0.95);
+  }
+
+  .button-icon {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .audio-label {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
+  }
+
+  /* Hidden audio element */
+  audio {
+    display: none;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .story-container {
+      padding: 1.5rem;
+    }
+
+    .story-container > h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .story-part {
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .audio-player {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .play-button {
+      width: 55px;
+      height: 55px;
+    }
+
+    .button-icon {
+      font-size: 1.5rem;
+    }
+
+    .audio-label {
+      font-size: 1rem;
+    }
+
+    .story-part p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .story-container {
+      padding: 1rem;
+    }
+
+    .story-container > h1 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .story-part {
+      padding: 0.75rem;
+      border-left-width: 4px;
+    }
+
+    .part-header h2 {
+      font-size: 1.25rem;
+    }
+
+    .audio-player-wrapper {
+      padding: 1rem;
+    }
+
+    .play-button {
+      width: 50px;
+      height: 50px;
+    }
+
+    .button-icon {
+      font-size: 1.3rem;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const playButtons = document.querySelectorAll('.play-button');
+
+    playButtons.forEach((button, index) => {
+      const partNumber = index + 1;
+      const audioElement = document.getElementById(`audio-part-${partNumber}`);
+
+      button.addEventListener('click', async function() {
+        // Stop all other audio
+        document.querySelectorAll('audio').forEach(audio => {
+          if (audio !== audioElement) {
+            audio.pause();
+            audio.currentTime = 0;
+          }
+        });
+
+        // Reset all buttons to microphone emoji
+        playButtons.forEach(btn => {
+          btn.innerHTML = '<span class="button-icon">🎙️</span>';
+        });
+
+        if (audioElement.paused) {
+          try {
+            await audioElement.play();
+            button.innerHTML = '<span class="button-icon">⏸️</span>';
+          } catch (error) {
+            console.error(`Error playing audio for part ${partNumber}:`, error);
+            alert(`Unable to play audio for Part ${partNumber}. Please check your internet connection.`);
+          }
+        } else {
+          audioElement.pause();
+          button.innerHTML = '<span class="button-icon">🎙️</span>';
+        }
+      });
+
+      // Update button when audio ends
+      audioElement.addEventListener('ended', function() {
+        button.innerHTML = '<span class="button-icon">🎙️</span>';
+      });
+
+      // Update button while playing
+      audioElement.addEventListener('play', function() {
+        button.innerHTML = '<span class="button-icon">⏸️</span>';
+      });
+
+      audioElement.addEventListener('pause', function() {
+        if (!audioElement.ended) {
+          button.innerHTML = '<span class="button-icon">🎙️</span>';
+        }
+      });
+    });
+  });
+</script>
+</div>
+
+<footer>
+<p>Educational Literary Web App</p>
+</footer>
+
+<script>
+function showSection(id){
+    document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
